@@ -2,11 +2,24 @@
     "manifest_description": {
         "message": "A browser extension that detects shadowbans on Twitter."
     },
+
     "accountShadowbannedMessage": {
         "message": "This user may be shadowbanned, so this tweet may not appear in search results."
     },
     "accountSuggestBannedMessage": {
         "message": "This user may be suggest-banned, so this account may not apper in search suggestions."
+    },
+    "accountAndTweetShadowbannedMessage": {
+        "message": "This tweet is age-restricted and cannot be viewed by users under the age of 18 or who are not logged in. This tweet may not appear in search results."
+    },
+    "tweetFlaggedAsSensitiveMessage": {
+        "message": "This tweet is flagged as sensitive and will not appear in search results depending on the viewer's preferences."
+    },
+    "tweetShadowbannedMessage": {
+        "message": "This tweet is age-restricted and cannot be viewed by users under the age of 18 or who are not logged in. This tweet may not appear in search results."
+    },
+    "tweetNoProblemMessage": {
+        "message": "No problems was found with this tweet."
     },
 
     "statusMessageSeparator": {
@@ -45,22 +58,6 @@
     },
     "tweetsPossiblyNotInSearchResults": {
         "message": "🚫Tweet may not appear in search results."
-    },
-
-    "accountShadowbannedAndTweetFlaggedAsSensitiveMessage": {
-        "message": "This user may be shadowbanned so this tweet may not appear in search results. Also, this tweet is flagged as sensitive."
-    },
-    "accountAndTweetShadowbannedMessage": {
-        "message": "This tweet is age-restricted and cannot be viewed by users under the age of 18 or who are not logged in. This tweet may not appear in search results."
-    },
-    "tweetFlaggedAsSensitiveMessage": {
-        "message": "This tweet is flagged as sensitive and will not appear in search results depending on the viewer's preferences."
-    },
-    "tweetShadowbannedMessage": {
-        "message": "This tweet is age-restricted and cannot be viewed by users under the age of 18 or who are not logged in. This tweet may not appear in search results."
-    },
-    "tweetNoProblemMessage": {
-        "message": "No problems was found with this tweet."
     },
 
     "showMore": {

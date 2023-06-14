@@ -36,7 +36,8 @@ class TweetMessageFactory {
                 if (tweet.possiblySensitive) {
                     if (user.possiblySensitive) {
                         if (tweet.possiblySensitiveEditable) {
-                            messages.push("accountShadowbannedAndTweetFlaggedAsSensitiveMessage")
+                            messages.push("accountShadowbannedMessage")
+                            messages.push("tweetFlaggedAsSensitiveMessage")
                         } else {
                             messages.push("accountAndTweetShadowbannedMessage")
                         }
@@ -44,13 +45,11 @@ class TweetMessageFactory {
                         messages.push("accountShadowbannedMessage")
                     }
                 } else {
-                    // if (tweet.possiblySensitive) {
                     if (tweet.possiblySensitiveEditable) {
                         messages.push("tweetFlaggedAsSensitiveMessage")
                     } else {
                         messages.push("tweetShadowbannedMessage")
                     }
-                    // }
                 }
 
                 if (user.possiblySuggestBanned) {

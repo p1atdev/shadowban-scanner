@@ -2,11 +2,24 @@
     "manifest_description": {
         "message": "Twitterのシャドウバンを検出する拡張機能です。"
     },
+
     "accountShadowbannedMessage": {
         "message": "このユーザーはシャドウバンされている可能性があるため、ツイートが検索結果に表示されない可能性があります。"
     },
     "accountSuggestBannedMessage": {
         "message": "このユーザーは検索候補バンされている可能性があるため、アカウントが検索候補に表示されない可能性があります。"
+    },
+    "accountAndTweetShadowbannedMessage": {
+        "message": "このツイートには年齢制限があり、18歳未満のユーザーやログインしていないユーザーは閲覧できません。また、検索結果に表示されない可能性があります。"
+    },
+    "tweetFlaggedAsSensitiveMessage": {
+        "message": "このツイートにはセンシティブフラグが付与されており、閲覧者の設定によっては検索結果に表示されません。"
+    },
+    "tweetShadowbannedMessage": {
+        "message": "このツイートには年齢制限があり、18歳未満のユーザーやログインしていないユーザーは閲覧できません。また、検索結果に表示されない可能性があります。"
+    },
+    "tweetNoProblemMessage": {
+        "message": "ツイートに問題は見つかりませんでした。"
     },
 
     "statusMessageSeparator": {
@@ -45,22 +58,6 @@
     },
     "tweetsPossiblyNotInSearchResults": {
         "message": "🚫ツイートが検索結果に表示されない可能性があります"
-    },
-
-    "accountShadowbannedAndTweetFlaggedAsSensitiveMessage": {
-        "message": "このユーザーはシャドウバンされている可能性があるため、ツイートが検索結果に表示されない可能性があります。また、このツイートにはセンシティブフラグが付与されています。"
-    },
-    "accountAndTweetShadowbannedMessage": {
-        "message": "このツイートには年齢制限があり、18歳未満のユーザーやログインしていないユーザーは閲覧できません。また、検索結果に表示されない可能性があります。"
-    },
-    "tweetFlaggedAsSensitiveMessage": {
-        "message": "このツイートにはセンシティブフラグが付与されており、閲覧者の設定によっては検索結果に表示されません。"
-    },
-    "tweetShadowbannedMessage": {
-        "message": "このツイートには年齢制限があり、18歳未満のユーザーやログインしていないユーザーは閲覧できません。また、検索結果に表示されない可能性があります。"
-    },
-    "tweetNoProblemMessage": {
-        "message": "ツイートに問題は見つかりませんでした。"
     },
 
     "showMore": {
