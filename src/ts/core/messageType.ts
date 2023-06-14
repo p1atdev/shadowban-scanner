@@ -92,7 +92,7 @@ class TweetMessageFactory {
                 }
 
                 const infoText = info.map((key) => this.t(key)).join(this.t("statusInfoSeparator"))
-                console.log(infoText)
+
                 return infoText
             }
         }

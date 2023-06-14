@@ -16,8 +16,6 @@ class MessageElement {
         }
         this.div.style.color = color
 
-        console.log("type", type, "dataset", this.div.dataset)
-
         if (type === "tweet") {
             const pre = document.createElement("pre")
             pre.style.display = "none"

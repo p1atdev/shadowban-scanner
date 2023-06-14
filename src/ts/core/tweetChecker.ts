@@ -26,8 +26,6 @@ class TweetChecker {
             this.searchTypeahead = searchTypeahead
         }
 
-        console.log(this.searchTypeahead)
-
         const searchResult = await this.searchTypeahead.search()
 
         const tweetStatus: TweetStatus = {
@@ -42,8 +40,6 @@ class TweetChecker {
                 possiblySuggestBanned: searchResult.possiblySuggestBanned,
             },
         }
-
-        console.log("tweetStatus", tweetStatus)
 
         const color = new Color().textColor
         const messageElement = new MessageElement("tweet", color, tweetStatus, "tweetStatus")

@@ -39,8 +39,6 @@ class ProfileChecker {
             },
         }
 
-        console.log("profileStatus", profileStatus)
-
         if (ProfileMessageFactory.isNoProblem(profileStatus)) return
 
         const color = new Color().textColor
