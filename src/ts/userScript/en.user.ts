@@ -1,4 +1,4 @@
-import translation from "../../../_locales/en/messages.json";
-import { UserScriptBase } from "./userScriptBase";
+import { enDictionary } from "../core/dictionary"
+import { UserScriptBase } from "./userScriptBase"
 
-new UserScriptBase(translation);
+new UserScriptBase(enDictionary)

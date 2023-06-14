@@ -1,21 +1,22 @@
-import { Core, TranslationData } from "../core/core";
-import { TextFlow, TextFlowOptions } from "../pageScript/textFlow";
-import { DEFAULT_SETTINGS } from "../defaultSettings";
+import { Core } from "../core/core"
+import { TextFlow, TextFlowOptions } from "../pageScript/textFlow"
+import { DEFAULT_SETTINGS } from "../defaultSettings"
+import { Dictionary } from "../core/dictionary"
 
 class UserScriptBase {
-    constructor(translationData: TranslationData) {
+    constructor(dictionary: Dictionary) {
         const textFlowOptions: TextFlowOptions = {
             ...DEFAULT_SETTINGS,
             translator: (key) => {
-                return translationData[key].message;
-            }
-        };
-        const textFlow = new TextFlow(textFlowOptions);
+                return dictionary[key].message
+            },
+        }
+        const textFlow = new TextFlow(textFlowOptions)
 
         new Core(() => {
-            textFlow.run();
-        });
+            textFlow.run()
+        })
     }
 }
 
-export { UserScriptBase };
+export { UserScriptBase }
