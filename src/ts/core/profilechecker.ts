@@ -41,9 +41,7 @@ class ProfileChecker {
 
         console.log("profileStatus", profileStatus)
 
-        const messageFactory = new ProfileMessageFactory(profileStatus, () => "")
-
-        if (messageFactory.isNoProblem()) return
+        if (ProfileMessageFactory.isNoProblem(profileStatus)) return
 
         const color = new Color().textColor
 

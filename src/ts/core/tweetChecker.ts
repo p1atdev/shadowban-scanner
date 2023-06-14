@@ -52,9 +52,7 @@ class TweetChecker {
             messageElement.element.classList.add(CURRENT_USERS_TWEET_CLASS_NAME)
         }
 
-        const messageFactory = new TweetMessageFactory(tweetStatus, () => "")
-
-        if (messageFactory.isNoProblem()) {
+        if (TweetMessageFactory.isNoProblem(tweetStatus)) {
             messageElement.element.classList.add("shadowban-scanner-message-no-problem")
         }
 

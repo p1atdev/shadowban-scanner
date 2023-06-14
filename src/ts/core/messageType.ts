@@ -27,7 +27,7 @@ class TweetMessageFactory {
 
         switch (type) {
             case "message": {
-                if (this.isNoProblem()) {
+                if (TweetMessageFactory.isNoProblem(this.tweetStatus)) {
                     return this.t("tweetNoProblemMessage")
                 }
 
@@ -99,8 +99,8 @@ class TweetMessageFactory {
         }
     }
 
-    isNoProblem(): boolean {
-        const { tweet, user } = this.tweetStatus
+    static isNoProblem(tweetStatus: TweetStatus): boolean {
+        const { tweet, user } = tweetStatus
 
         if (user.possiblySensitive) {
             return false
@@ -115,18 +115,18 @@ class TweetMessageFactory {
 }
 
 class ProfileMessageFactory {
-    private readonly tweetStatus: ProfileStatus
+    private readonly profileStatus: ProfileStatus
     private readonly t: Translator
 
     constructor(status: ProfileStatus, translator: Translator) {
-        this.tweetStatus = status
+        this.profileStatus = status
         this.t = translator
     }
 
     compose(): string {
-        const { user } = this.tweetStatus
+        const { user } = this.profileStatus
 
-        if (this.isNoProblem()) {
+        if (ProfileMessageFactory.isNoProblem(this.profileStatus)) {
             return this.t("tweetNoProblemMessage")
         }
 
@@ -143,8 +143,8 @@ class ProfileMessageFactory {
         return messageText
     }
 
-    isNoProblem(): boolean {
-        const { user } = this.tweetStatus
+    static isNoProblem(profileStatus: ProfileStatus): boolean {
+        const { user } = profileStatus
 
         if (user.possiblySensitive) {
             return false
